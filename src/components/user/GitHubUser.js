@@ -16,16 +16,11 @@ export default function GitHubUser({ login }) {
     //   renderSuccess={UserDetails}
     //   loadingFallback={<Spinner />}
     // />
-    <div>
-      {console.log(user)}
-      {UserDetails({ data: user })}
-    </div>
+    <div>{UserDetails({ data: user })}</div>
   );
 }
 
 function UserDetails({ data }) {
-  console.log("called");
-  console.log("in function: ", data);
   return (
     <div className="githubUser">
       <img
@@ -34,12 +29,26 @@ function UserDetails({ data }) {
         alt={data.login}
         style={{ width: 200 }}
       />
-      {data.name && <h1 className="profile_name">{data.name}</h1>}
-      <h3 className="profile_login">@{data.login}</h3>
+      {data.name && <h1 className="profile_name space">{data.name}</h1>}
+      <h3 className="profile_login space">@{data.login}</h3>
       <div className="date_wrapper">
         {data.location && <p className="profile_location">{data.location}</p>}
         <span>Joined </span>
         {data.join}
+      </div>
+      <div className="profile_brief">
+        <div className="card">
+          <p className="number">28</p>
+          <p>repositories</p>
+        </div>
+        <div className="card">
+          <p className="number">2</p>
+          <p>followers</p>
+        </div>
+        <div className="card">
+          <p className="number">3</p>
+          <p>following</p>
+        </div>
       </div>
     </div>
   );

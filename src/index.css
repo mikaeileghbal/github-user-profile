@@ -1,10 +1,19 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --text-gray: rgb(106, 113, 121);
   --blue: rgb(0, 115, 251);
   --black: rgb(26, 29, 34);
   --gray: rgb(245, 246, 248);
   --text-silver: rgb(210, 222, 246);
+  --space: 1px;
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

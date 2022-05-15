@@ -10,15 +10,51 @@
 
 .profile_name {
   text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0.2em;
 }
 
 .profile_login {
   color: var(--blue);
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .date_wrapper {
   color: var(--text-silver);
+  margin: 2em;
 }
 .profile_location {
   text-transform: uppercase;
+  margin: 4px;
+}
+
+.profile_brief {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.card {
+  padding: 1em;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.card {
+  text-transform: uppercase;
+  color: var(--text-silver);
+}
+
+.number {
+  font-size: 2rem;
+  color: white;
+  margin: 0.25em;
+}
+
+.space {
+  letter-spacing: var(--space);
 }
