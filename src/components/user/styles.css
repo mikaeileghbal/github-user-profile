@@ -1,0 +1,24 @@
+.main {
+  background-color: var(--black);
+  padding: 3rem;
+}
+
+.profile_image {
+  border-radius: 50%;
+  border: 10px solid var(--blue);
+}
+
+.profile_name {
+  text-transform: capitalize;
+}
+
+.profile_login {
+  color: var(--blue);
+}
+
+.date_wrapper {
+  color: var(--text-silver);
+}
+.profile_location {
+  text-transform: uppercase;
+}

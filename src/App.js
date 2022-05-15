@@ -1,5 +1,5 @@
 import "./App.css";
-import GitHubUser from "./components/GitHubUser";
+import GitHubUser from "./components/user/GitHubUser";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <h1>Github User Profile</h1>
       </header>
-      <main>
+      <main className="section main">
         <GitHubUser login="mikaeileghbal" />
       </main>
     </div>
