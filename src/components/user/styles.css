@@ -1,33 +1,53 @@
-.main {
-  background-color: var(--black);
-  padding: 3rem;
+.github_user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_avatar {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1.5rem;
 }
 
 .profile_image {
+  width: 100%;
   border-radius: 50%;
-  border: 10px solid var(--blue);
+  border: 8px solid var(--blue);
 }
 
 .profile_name {
   text-transform: capitalize;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 500;
-  margin: 0.2em;
+  margin-bottom: 10px;
+  color: var(--white);
 }
 
 .profile_login {
+  font-family: "Courier New", Courier, monospace;
   color: var(--blue);
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.2em;
 }
 
 .date_wrapper {
   color: var(--text-silver);
-  margin: 2em;
+  margin: 1em;
+  display: flex;
 }
+
+.info {
+  margin: 0 16px 8px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
 .profile_location {
   text-transform: uppercase;
-  margin: 4px;
 }
 
 .profile_brief {
@@ -35,7 +55,7 @@
   gap: 8px;
   grid-template-columns: repeat(3, 150px);
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .card {
@@ -46,15 +66,54 @@
 
 .card {
   text-transform: uppercase;
-  color: var(--text-silver);
 }
 
 .number {
-  font-size: 2rem;
-  color: white;
-  margin: 0.25em;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--white);
 }
 
-.space {
-  letter-spacing: var(--space);
+.label {
+  margin-top: 0.75em;
+  color: rgba(200, 225, 255, 0.7);
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.space-1 {
+  letter-spacing: var(--space-1);
+}
+
+.space-2 {
+  letter-spacing: var(--space-2);
+}
+
+.space-3 {
+  letter-spacing: var(--space-3);
+}
+
+.capitalized {
+  text-transform: capitalize;
+}
+
+/* charts styles move to own file */
+.charts {
+  padding: 3rem 5rem;
+}
+
+.charts_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -8rem;
+}
+
+.chart {
+  padding: 2em;
+  height: 400px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
 }
