@@ -1,0 +1,40 @@
+/* charts styles move to own file */
+section {
+  padding: 3rem 5rem;
+}
+
+.charts_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 2rem;
+  margin-top: -8rem;
+}
+
+.chart {
+  text-align: left;
+  padding: 2em;
+  height: 475px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
+}
+
+.chart .header {
+  display: inline-block;
+  margin: 0px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #24292f;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    90deg,
+    rgb(209, 213, 218) 50%,
+    rgba(255, 255, 255, 0) 0px
+  );
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 2px;
+
+  padding-bottom: 6px;
+}

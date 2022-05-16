@@ -1,12 +1,13 @@
 import React from "react";
+import "./styles.css";
 
 export default function SearchFrom() {
   return (
-    <div>
+    <div className="search-form_container">
       <form>
-        <h1>find your </h1>
-        <h1>github profile</h1>
-        <input type="text" value="Mikaeil" />
+        <img src="./favicon.ico" alt="github" />
+        <label htmlFor="username">find your github profile</label>
+        <input type="text" name="username" className="space-2" />
       </form>
     </div>
   );

@@ -1,0 +1,41 @@
+.search-form_container {
+  height: 100vh;
+  background-color: rgb(6, 30, 34);
+  background-image: linear-gradient(rgb(26, 30, 34) 0%, rgb(36, 41, 46) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 20vh;
+  color: var(--white);
+}
+
+label,
+input {
+  display: block;
+}
+label {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 2rem;
+  text-transform: capitalize;
+}
+input {
+  font-family: "Courier New", Courier, monospace;
+  width: 100%;
+  max-width: 600px;
+  color: rgb(121, 184, 255);
+  background-color: rgb(38, 48, 60);
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}

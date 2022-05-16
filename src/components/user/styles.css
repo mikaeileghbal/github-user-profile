@@ -36,7 +36,7 @@
 
 .date_wrapper {
   color: var(--text-silver);
-  margin: 1em;
+  margin: 1.25em 1em 1em;
   display: flex;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .label {
-  margin-top: 0.75em;
+  margin-top: 1em;
   color: rgba(200, 225, 255, 0.7);
   font-size: 0.75rem;
   font-weight: 400;
@@ -95,25 +95,4 @@
 
 .capitalized {
   text-transform: capitalize;
-}
-
-/* charts styles move to own file */
-.charts {
-  padding: 3rem 5rem;
-}
-
-.charts_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  justify-content: center;
-  gap: 2rem;
-  margin-top: -8rem;
-}
-
-.chart {
-  padding: 2em;
-  height: 400px;
-  border-radius: 4px;
-  background-color: white;
-  box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
 }
