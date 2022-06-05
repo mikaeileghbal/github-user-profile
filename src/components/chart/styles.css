@@ -23,6 +23,7 @@ section {
 .chart .header {
   display: inline-block;
   margin: 0px;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: #24292f;
@@ -37,4 +38,9 @@ section {
   background-size: 10px 2px;
 
   padding-bottom: 6px;
+}
+
+.chart p {
+  margin: 16px 0;
+  color: rgb(88, 96, 105);
 }

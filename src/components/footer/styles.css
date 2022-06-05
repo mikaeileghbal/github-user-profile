@@ -1,0 +1,11 @@
+footer .footer_list,
+footer .footer_list_item {
+  display: inline-block;
+}
+
+footer .footer_list {
+  margin: 0 0.5rem;
+}
+footer .footer_list_item:not(:first-child)::before {
+  content: "  -  ";
+}
