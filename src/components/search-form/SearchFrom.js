@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { GoMarkGithub } from "react-icons/go";
 import "./styles.css";
 
 export default function SearchFrom({ onChange }) {
@@ -17,7 +18,7 @@ export default function SearchFrom({ onChange }) {
   return (
     <div className="search-form_container">
       <form>
-        <img src="./favicon.ico" alt="github" />
+        <GoMarkGithub style={{ fontSize: "5rem", color: "var(--blue)" }} />
         <label htmlFor="username">find your github profile</label>
         <input
           type="text"

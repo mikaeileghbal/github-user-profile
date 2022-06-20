@@ -26,12 +26,12 @@ export default function Repos({ login }) {
   console.log(`https://api.github.com/users/${login}/repos`);
 
   return (
-    <Fetch
-      uri={`https://api.github.com/users/${login}/repos`}
-      renderSuccess={RepoList}
-      //loadingFallback={<Spinner />}
-    />
-    //RepoList({})
+    // <Fetch
+    //   uri={`https://api.github.com/users/${login}/repos`}
+    //   renderSuccess={RepoList}
+    //   //loadingFallback={<Spinner />}
+    // />
+    RepoList({ data: repos })
   );
 }
 

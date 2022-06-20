@@ -13,12 +13,12 @@ const user = {
 };
 export default function GitHubUser({ login }) {
   return (
-    <Fetch
-      uri={`https://api.github.com/users/${login}`}
-      renderSuccess={UserDetails}
-      loadingFallback={<Spinner />}
-    />
-    //<div>{UserDetails({ data: user })}</div>
+    // <Fetch
+    //   uri={`https://api.github.com/users/${login}`}
+    //   renderSuccess={UserDetails}
+    //   loadingFallback={<Spinner />}
+    // />
+    <div>{UserDetails({ data: user })}</div>
   );
 }
 
