@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Fetch from "../../fetch/Fetch";
+import { GoLocation, GoCalendar } from "react-icons/go";
+
 import "./styles.css";
 
 const user = {
@@ -36,10 +38,16 @@ function UserDetails({ data }) {
         <div className="date_wrapper">
           <span className="info">
             {data.location && (
-              <p className="profile_location">{data.location}</p>
+              <p className="profile_location">
+                <GoLocation style={{ margin: "0 0.5rem" }} />
+                {data.location}
+              </p>
             )}
           </span>
-          <span className="info capitalized">Joined {data.join}</span>
+          <span className="info capitalized">
+            <GoCalendar style={{ margin: "0 0.5rem" }} />
+            Joined {data.join}
+          </span>
         </div>
         <div className="profile_brief">
           <div className="card">

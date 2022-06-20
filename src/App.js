@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Chart from "./components/chart/Chart";
 import Footer from "./components/footer/Footer";
-import Repo from "./components/repo/Repo";
+import Repos from "./components/repo/Repos";
 import SearchFrom from "./components/search-form/SearchFrom";
 import GitHubUser from "./components/user/GitHubUser";
 
@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <GitHubUser login={login} />
       <Chart />
-      <Repo />
+      <Repos login={login} />
       <Footer />
     </div>
   );

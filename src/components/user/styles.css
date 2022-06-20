@@ -38,12 +38,16 @@
   color: var(--text-silver);
   margin: 1.25em 1em 1em;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .info {
   margin: 0 16px 8px;
   font-weight: 400;
   font-size: 1.1rem;
+  display: flex;
+  align-items: center;
 }
 
 .profile_location {
