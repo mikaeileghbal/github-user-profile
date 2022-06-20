@@ -26,12 +26,12 @@ export default function Repos({ login }) {
   console.log(`https://api.github.com/users/${login}/repos`);
 
   return (
-    // <Fetch
-    //   uri={`https://api.github.com/users/${login}/repos`}
-    //   renderSuccess={RepoList}
-    //   //loadingFallback={<Spinner />}
-    // />
-    RepoList({ data: repos })
+    <Fetch
+      uri={`https://api.github.com/users/${login}/repos`}
+      renderSuccess={RepoList}
+      //loadingFallback={<Spinner />}
+    />
+    //RepoList({})
   );
 }
 
@@ -47,9 +47,12 @@ function RepoList({ data }) {
         </header>
         <div className="repo-list_container">
           <ul className="repo-list">
-            {data.map((repo, i) => (
-              <Repo key={i} repo={repo} />
-            ))}
+            {(!data || data.length === 0) && (
+              <li>
+                <p className="info">No repositories.</p>
+              </li>
+            )}
+            {data && data.map((repo, i) => <Repo key={i} repo={repo} />)}
           </ul>
         </div>
       </div>

@@ -9,16 +9,16 @@ const user = {
   login: "mikaeileghbal",
   name: "mikaeil eghbal",
   location: "iran",
-  join: "november 12, 2022",
+  created_at: "2019-11-12T09:49:30Z",
 };
 export default function GitHubUser({ login }) {
   return (
-    // <Fetch
-    //   uri={`https://api.github.com/users/${login}`}
-    //   renderSuccess={UserDetails}
-    //   loadingFallback={<Spinner />}
-    // />
-    <div>{UserDetails({ data: user })}</div>
+    <Fetch
+      uri={`https://api.github.com/users/${login}`}
+      renderSuccess={UserDetails}
+      loadingFallback={<Spinner />}
+    />
+    //<div>{UserDetails({ data: user })}</div>
   );
 }
 
@@ -46,20 +46,20 @@ function UserDetails({ data }) {
           </span>
           <span className="info capitalized">
             <GoCalendar style={{ margin: "0 0.5rem" }} />
-            Joined {data.join}
+            Joined {getJoinDate(data.created_at)}
           </span>
         </div>
         <div className="profile_brief">
           <div className="card">
-            <p className="number">28</p>
+            <p className="number">{data.public_repos}</p>
             <p className="label space-1">repositories</p>
           </div>
           <div className="card">
-            <p className="number">2</p>
+            <p className="number">{data.followers}</p>
             <p className="label space-1">followers</p>
           </div>
           <div className="card">
-            <p className="number">3</p>
+            <p className="number">{data.following}</p>
             <p className="label space-1">following</p>
           </div>
         </div>
@@ -75,3 +75,25 @@ function Spinner() {
     </div>
   );
 }
+
+function getJoinDate(date) {
+  let newDate = new Date(date);
+  return `${
+    months[newDate.getMonth()]
+  } ${newDate.getDate()}, ${newDate.getFullYear()}`;
+}
+
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];

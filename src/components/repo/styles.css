@@ -52,3 +52,7 @@ h2 {
 
   padding-bottom: 6px;
 }
+p.info {
+  margin: 16px 0;
+  color: rgb(88, 96, 105);
+}
