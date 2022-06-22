@@ -10,5 +10,17 @@ footer .footer_list {
   margin: 0 0.5rem;
 }
 footer .footer_list_item:not(:first-child)::before {
-  content: "  -  ";
+  content: "\00bb";
+
+  margin: 0 0.5rem;
+}
+
+footer p {
+  font-weight: 700;
+  color: rgb(88, 96, 105);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: var(--blue);
 }

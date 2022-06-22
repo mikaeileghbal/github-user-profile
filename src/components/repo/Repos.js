@@ -1,23 +1,30 @@
 import React from "react";
 import Fetch from "../../fetch/Fetch";
+import { GoRepo } from "react-icons/go";
 import "./styles.css";
+import langColor from "../../utils/langColors";
 
 const repos = [
   {
     id: "top section",
     name: "bottom section",
+    size: 1012,
+    html_url: "https://github.com/mikaeileghbal/albums",
+    language: "JavaScript",
   },
   {
     id: "id section",
     name: "name section",
+    size: 1012,
+    html_url: "https://github.com/mikaeileghbal/albums",
+    language: "HTML",
   },
   {
     id: "id section",
     name: "name section",
-  },
-  {
-    id: "id section",
-    name: "name section",
+    size: 1012,
+    html_url: "https://github.com/mikaeileghbal/albums",
+    language: "CSS",
   },
 ];
 
@@ -63,9 +70,28 @@ function RepoList({ data }) {
 function Repo({ repo }) {
   return (
     <li>
-      <a className="repo" href="#">
-        <div className="repo_top">{repo.id}</div>
-        <div>{repo.name}</div>
+      <a className="repo" href={repo.html_url}>
+        <div className="repo_top">
+          <GoRepo
+            style={{
+              marginRight: "0.6rem",
+              fontSize: "1rem",
+              color: "rgb(88, 96, 105)",
+              verticalAlign: "middle",
+            }}
+          />
+          <h3 style={{ display: "inline", color: "#24292f" }}>{repo.name}</h3>
+        </div>
+        <div className="repo_bottom">
+          <span>
+            <div
+              className="lang_color"
+              style={{ backgroundColor: langColor[repo.language] }}
+            ></div>
+            {repo.language}
+          </span>
+          <span>{repo.size} KB</span>
+        </div>
       </a>
     </li>
   );
