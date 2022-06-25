@@ -5,7 +5,7 @@ export default function Chart() {
   return (
     <section className="section charts">
       <div className="charts_container">
-        <div className="chart">
+        <div className="chart" id="chart-langs">
           <h2 className="header">top languages</h2>
           <p>Nothing to see here!</p>
         </div>
