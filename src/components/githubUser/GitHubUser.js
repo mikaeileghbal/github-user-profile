@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Fetch from "../../fetch/Fetch";
 import { GoLocation, GoCalendar } from "react-icons/go";
 
-import "./styles.css";
+import "./githubUser.css";
 
 const user = {
   avatar_url: "./favicon.ico",

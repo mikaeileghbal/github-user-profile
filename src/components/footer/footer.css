@@ -1,6 +1,13 @@
 footer {
   padding: 3rem;
 }
+
+.footer-container {
+  font-weight: 700;
+  color: rgb(88, 96, 105);
+  font-size: 0.9rem;
+}
+
 footer .footer_list,
 footer .footer_list_item {
   display: inline-block;
@@ -13,12 +20,6 @@ footer .footer_list_item:not(:first-child)::before {
   content: "\00bb";
 
   margin: 0 0.5rem;
-}
-
-footer p {
-  font-weight: 700;
-  color: rgb(88, 96, 105);
-  font-size: 0.9rem;
 }
 
 footer a {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
-import "./styles.css";
+import "./searchForm.css";
 
 export default function SearchFrom({ onChange }) {
   const [username, setUsername] = useState("");

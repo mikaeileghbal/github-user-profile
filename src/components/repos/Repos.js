@@ -1,7 +1,7 @@
 import React from "react";
 import Fetch from "../../fetch/Fetch";
 import { GoRepo } from "react-icons/go";
-import "./styles.css";
+import "./repos.css";
 import langColor from "../../utils/langColors";
 
 const repos = [
