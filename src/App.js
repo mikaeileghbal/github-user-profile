@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="App">
       <GitHubUser login={login} />
-      <Chart />
       <Repos login={login} />
       <Footer />
     </div>
