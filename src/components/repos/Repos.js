@@ -50,22 +50,10 @@ export default function Repos({ login }) {
   );
 }
 
-// function createLanguagesList(data, container) {
-//   console.log(data);
-//   let languages = data.reduce((langs, val) => {
-//     langs[val.language]
-//       ? (langs[val.language] = langs[val.language] + 1)
-//       : (langs[val.language] = 1);
-//     return langs;
-//   }, {});
-
-//   return languages;
-// }
-
 function RepoList({ data }) {
   return (
     <>
-      <Charts data={[]} />
+      <Charts data={data} />
       <section className="repos">
         <div className="repo_container">
           <header>

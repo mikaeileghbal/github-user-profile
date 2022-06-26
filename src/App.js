@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { Chart, Footer, Repos, SearchFrom, GitHubUser } from "./components";
+import { Footer, Repos, SearchFrom, GitHubUser } from "./components";
 
 function App() {
   const [login, setLogin] = useState("");
