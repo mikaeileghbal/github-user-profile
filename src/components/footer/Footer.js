@@ -14,12 +14,17 @@ export default function Footer() {
           </li>
           <li className="footer_list_item">
             <a className="footer_link" href="#">
+              Chart.js
+            </a>
+          </li>
+          <li className="footer_list_item">
+            <a className="footer_link" href="#">
               GitHub Api
             </a>
           </li>
           <li className="footer_list_item">
             <a className="footer_link" href="#">
-              React.js
+              Styled Components
             </a>
           </li>
         </ul>

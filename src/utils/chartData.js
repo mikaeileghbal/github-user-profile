@@ -1,5 +1,4 @@
 function createLanguagesList(data) {
-  console.log(data);
   let languages = data.reduce((langs, val) => {
     langs[val.language]
       ? (langs[val.language] = langs[val.language] + 1)
@@ -19,22 +18,22 @@ function getLanguagesData(repodata) {
         data: data ? Object.values(data) : [],
 
         backgroundColor: [
-          "rgba(255, 99, 132, 0.2)",
-          "rgba(54, 162, 235, 0.2)",
-          "rgba(255, 206, 86, 0.2)",
-          "rgba(75, 192, 192, 0.2)",
-          "rgba(153, 102, 255, 0.2)",
-          "rgba(255, 159, 64, 0.2)",
+          "rgb(248, 241, 144)",
+          "rgb(241, 151, 171)",
+          "rgb(148, 201, 236)",
+          "rgb(159, 238, 238)",
+          "rgb(188, 163, 238)",
+          "rgb(243, 209, 176)",
         ],
         borderColor: [
-          "rgba(255, 99, 132, 1)",
-          "rgba(54, 162, 235, 1)",
-          "rgba(255, 206, 86, 1)",
-          "rgba(75, 192, 192, 1)",
-          "rgba(153, 102, 255, 1)",
-          "rgba(255, 159, 64, 1)",
+          "rgb(250, 245, 148)",
+          "rgb(245, 156, 175)",
+          "rgb(152, 208, 240)",
+          "rgb(162, 242, 242)",
+          "rgb(194, 165, 242)",
+          "rgb(248, 212, 178)",
         ],
-        borderWidth: 1,
+        borderWidth: 0,
       },
     ],
   };

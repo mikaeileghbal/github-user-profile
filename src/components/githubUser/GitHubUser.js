@@ -13,12 +13,12 @@ const user = {
 };
 export default function GitHubUser({ login }) {
   return (
-    // <Fetch
-    //   uri={`https://api.github.com/users/${login}`}
-    //   renderSuccess={UserDetails}
-    //   loadingFallback={<Spinner />}
-    // />
-    <div>{UserDetails({ data: user })}</div>
+    <Fetch
+      uri={`https://api.github.com/users/${login}`}
+      renderSuccess={UserDetails}
+      loadingFallback={<Spinner />}
+    />
+    //<div>{UserDetails({ data: user })}</div>
   );
 }
 
@@ -70,7 +70,7 @@ function UserDetails({ data }) {
 
 function Spinner() {
   return (
-    <div>
+    <div style={{ padding: "16px" }}>
       <i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
     </div>
   );
