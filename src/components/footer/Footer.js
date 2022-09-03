@@ -8,23 +8,18 @@ export default function Footer() {
         <span>Built with</span>
         <ul className="footer_list">
           <li className="footer_list_item">
-            <a className="footer_link" href="#">
-              React.js
+            <a className="footer_link" href="https://reactjs.org">
+              react.js
             </a>
           </li>
           <li className="footer_list_item">
-            <a className="footer_link" href="#">
-              Chart.js
+            <a className="footer_link" href="https://react-chartjs-2.js.org">
+              react-chartjs-2
             </a>
           </li>
           <li className="footer_list_item">
-            <a className="footer_link" href="#">
-              GitHub Api
-            </a>
-          </li>
-          <li className="footer_list_item">
-            <a className="footer_link" href="#">
-              Styled Components
+            <a className="footer_link" href="https://api.github.com">
+              gitHub api
             </a>
           </li>
         </ul>

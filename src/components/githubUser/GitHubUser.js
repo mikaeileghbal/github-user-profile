@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Fetch from "../../fetch/Fetch";
 import { GoLocation, GoCalendar } from "react-icons/go";
 
 import "./githubUser.css";
 
-const user = {
-  avatar_url: "./favicon.ico",
-  login: "mikaeileghbal",
-  name: "mikaeil eghbal",
-  location: "iran",
-  created_at: "2019-11-12T09:49:30Z",
-};
+// const user = {
+//   avatar_url: "./favicon.ico",
+//   login: "mikaeileghbal",
+//   name: "mikaeil eghbal",
+//   location: "iran",
+//   created_at: "2019-11-12T09:49:30Z",
+// };
+
 export default function GitHubUser({ login }) {
   return (
     <Fetch

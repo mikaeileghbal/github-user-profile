@@ -1,40 +1,40 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Fetch from "../../fetch/Fetch";
 import { GoRepo } from "react-icons/go";
 import "./repos.css";
 import langColor from "../../utils/langColors";
 import { Charts } from "../../components";
 
-const repos = [
-  {
-    id: "top section",
-    name: "bottom section",
-    size: 1012,
-    html_url: "https://github.com/mikaeileghbal/albums",
-    language: "JavaScript",
-  },
-  {
-    id: "top section",
-    name: "bottom section",
-    size: 1012,
-    html_url: "https://github.com/mikaeileghbal/albums",
-    language: "JavaScript",
-  },
-  {
-    id: "id section",
-    name: "name section",
-    size: 1012,
-    html_url: "https://github.com/mikaeileghbal/albums",
-    language: "HTML",
-  },
-  {
-    id: "id section",
-    name: "name section",
-    size: 1012,
-    html_url: "https://github.com/mikaeileghbal/albums",
-    language: "CSS",
-  },
-];
+// const repos = [
+//   {
+//     id: "top section",
+//     name: "bottom section",
+//     size: 1012,
+//     html_url: "https://github.com/mikaeileghbal/albums",
+//     language: "JavaScript",
+//   },
+//   {
+//     id: "top section",
+//     name: "bottom section",
+//     size: 1012,
+//     html_url: "https://github.com/mikaeileghbal/albums",
+//     language: "JavaScript",
+//   },
+//   {
+//     id: "id section",
+//     name: "name section",
+//     size: 1012,
+//     html_url: "https://github.com/mikaeileghbal/albums",
+//     language: "HTML",
+//   },
+//   {
+//     id: "id section",
+//     name: "name section",
+//     size: 1012,
+//     html_url: "https://github.com/mikaeileghbal/albums",
+//     language: "CSS",
+//   },
+// ];
 
 export default function Repos({ login }) {
   console.log(login);
